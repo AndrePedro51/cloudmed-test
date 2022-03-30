@@ -1,13 +1,26 @@
 import Image from "next/image";
 import gaiman from "../../assets/gaiman-b9 1.png"
-import star from '../../assets/star.svg';
+import { Buttons } from "./Button";
+import { Content, Container} from "./styles";
+import { mdiStar } from '@mdi/js';
+import Icon from '@mdi/react'
+import { SocialMedias } from "./SocialMedia";
+import { Stars } from "./Stars";
+import { Header } from "./Header";
+import { AuthorInf } from "./AuthorInf";
 
 export function Aside(){
     return(
-        <>
-            <Image src={gaiman}/>
-            <Image src={star}/>
-        </>
+        <Container>
+            <Header />
+            <Content>
+                <Stars />
+                <AuthorInf />
+                <Buttons />
+                <SocialMedias />
+                <button>MINHA LISTA</button>
+            </Content>
+        </Container>
         
     )
 }

@@ -1,13 +1,11 @@
 import { Aside } from "../components/Aside";
 import { Books } from "../components/Books";
-import { Header } from "../components/Header/indext";
+import { Comp } from "../components/Comp";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Books />
-      <Aside />
+      <Comp />
     </>
   )
 }

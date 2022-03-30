@@ -1,4 +1,4 @@
-import { Container, Content } from "./styles"
+import { BooksStyle, Container, Content } from "./styles"
 import Image from 'next/image'
 import neveVidroMacas from '../../assets/neve vidro e maçãs - 2019.png'
 import mitologiaNordica from '../../assets/mitologia nordica  - 2017.png'
@@ -9,24 +9,30 @@ import lugarNenhum from '../../assets/Lugar nenhum - 1996.png'
 import livroDoCemiterio from '../../assets/o livro do cemitério - 2008.png'
 import versaoDefinitiva from '../../assets/Sandman Versão Definitiva (volume 1) - 2006.png'
 import coraline from '../../assets/Coraline - 2002.png'
+import { Header } from "./Header"
+import { Book } from "./Book"
 
 export function Books(){
     return (
-        <Container>
-            <h1>TODAS AS OBRAS</h1>
-            <Content>
-                <Image src={neveVidroMacas}/>
-                <Image src={mitologiaNordica}/>
-                <Image src={criaturasEstranhas}/>
-                <Image src={fumacaEspelhos}/>
-                <Image src={fimDosMundos}/>
-                <Image src={lugarNenhum}/>
-                <Image src={livroDoCemiterio}/>
-                <Image src={versaoDefinitiva}/>
-                <Image src={coraline}/>
-            </Content>
-            
-        </Container>
+        <BooksStyle>
+            <Header />
+            <Container>
+                <h1>TODAS AS OBRAS</h1>
+                <Content>
+                    <Book src={neveVidroMacas}/>
+                    <Book src={mitologiaNordica}/>
+                    <Book src={criaturasEstranhas}/>
+                    <Book src={fumacaEspelhos}/>
+                    <Book src={fimDosMundos}/>
+                    <Book src={lugarNenhum}/>
+                    <Book src={livroDoCemiterio}/>
+                    <Book src={versaoDefinitiva}/>
+                    <Book src={coraline}/>
+                </Content>
+                
+            </Container>
+        </BooksStyle>
+        
         
     )
 }
