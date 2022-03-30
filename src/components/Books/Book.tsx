@@ -1,13 +1,14 @@
 import Image, { ImageProps } from 'next/image'
 
-interface bookProps{
+
+interface bookProps extends ImageProps{
     description: string;
     year: number;
 }
 
-export function Book({ src }: ImageProps, { description, year }: bookProps){
+export function Book({ src, description, year }: bookProps){
     return(
-        <div>
+        <div className='Book'>
             <Image src={src} alt="livro"/>
             <p>{description}</p>
             <p>{year}</p>

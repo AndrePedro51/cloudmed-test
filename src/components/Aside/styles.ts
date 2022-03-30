@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.aside`
+    display: block;
+    position: fixed;
     height: 100vh;
     width: 20vw;
     min-width: 400px;
@@ -26,7 +28,7 @@ export const Content = styled.section`
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     color: var(--white-100);
 
 
