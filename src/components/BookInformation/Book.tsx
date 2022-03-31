@@ -1,5 +1,4 @@
 import Image, { ImageProps } from 'next/image'
-import Link from 'next/link';
 
 
 interface bookProps extends ImageProps{
@@ -10,9 +9,7 @@ interface bookProps extends ImageProps{
 export function Book({ src, description, year }: bookProps){
     return(
         <div className='book'>
-            <Link href="/fumaca-e-espelhos" passHref>
-                <Image src={src} alt="livro"/>
-            </Link>
+            <Image src={src} alt="livro"/>
             <p>{description}</p>
             <p>{year}</p>
         </div>

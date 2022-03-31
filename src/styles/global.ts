@@ -40,6 +40,10 @@ export const GlobalStyle = createGlobalStyle`
     button{
         cursor: pointer;
         font-weight: 500;
+        transition: all 0.2s;
+        :hover{
+            filter: brightness(50%);
+        }
     }
 
     [disabled]{

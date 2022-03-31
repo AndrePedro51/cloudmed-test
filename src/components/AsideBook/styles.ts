@@ -9,31 +9,31 @@ export const Container = styled.aside`
     background: var(--black-700);
     header{
         width: 100%;
-        height: 30vh;
+        height: 47vh;
     }
 `
 
 export const HeaderStyle = styled.header`
     width: 100%;
-    height: 30vh;
 `
-export const AuthorInfStyle = styled.div`
+export const BookInfStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     p{
         line-height: 1.5rem;
+        :nth-child(3){
+            font-weight: 700;
+        }
     }
 `
 
 export const Content = styled.section`
     padding: 2rem;
-    padding-top: 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     color: var(--white-100);
-
-    h1{
-        padding-bottom: 1rem;
-    }
 
 
     button{
@@ -54,7 +54,7 @@ export const ButtonsStyle = styled.div`
     gap: 1rem;
 
     button{
-        padding: .8rem 2.3rem;
+        padding: .8rem 2.5rem;
 
         border: none;
         border-radius: 25px;
@@ -76,18 +76,9 @@ export const SocialMediaStyle = styled.div`
     display: flex;
     justify-content: center;
     gap: 1rem;
-
-    svg, img{
-        cursor: pointer;
-        transition: all 0.2s;
-        :hover{
-            filter: brightness(50%);
-        }
-    }
 `
 
 export const StarsStyle = styled.div`
-    padding: 0;
-    margin: 1rem auto 0;
+    margin: 0 auto;
     text-align: center;
 `

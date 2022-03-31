@@ -10,6 +10,7 @@ import versaoDefinitiva from '../../assets/Sandman Versão Definitiva (volume 1)
 import coraline from '../../assets/Coraline - 2002.png'
 import { Header } from "./Header"
 import { Book } from "./Book"
+import { Pagination } from "../Pagination"
 
 export function Books(){
     return (
@@ -28,6 +29,7 @@ export function Books(){
                     <Book src={versaoDefinitiva} description="SANDMAN - VERSÃO DEFINITIVA (VOL 1)" year={2006}/>
                     <Book src={coraline} description="CORALINE" year={2002}/>
                 </Content>
+                <Pagination />
                 
             </Container>
         </BooksStyle>
