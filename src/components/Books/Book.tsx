@@ -8,7 +8,7 @@ interface bookProps extends ImageProps{
 
 export function Book({ src, description, year }: bookProps){
     return(
-        <div className='Book'>
+        <div className='book'>
             <Image src={src} alt="livro"/>
             <p>{description}</p>
             <p>{year}</p>

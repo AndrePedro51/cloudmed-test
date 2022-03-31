@@ -5,7 +5,7 @@ export const Container = styled.aside`
     position: fixed;
     height: 100vh;
     width: 20vw;
-    min-width: 400px;
+    min-width: 200px;
     
     background: var(--black-700);
     header{
