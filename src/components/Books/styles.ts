@@ -4,38 +4,43 @@ export const BooksStyle = styled.section`
     display: block;
     margin: 0 0 0 auto;
     padding-right: 2.5rem;
+    
+    @media(max-width:1750px){
+        main{
+            width:70vw;
+        }
+    }
+
+    @media(max-width:1150px){
+        padding-right: 0;
+        main{
+            width:100vw;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+    
 `
 export const Container = styled.main`
-    width: 78vw;
+    width: 75vw;
     padding: 1rem;
-
     h1{
         padding-bottom: 2rem;
         font-size: 2rem;
     }
-
-    @media(max-width:1750px){
-        width:75vw;
-    }
-    @media(max-width:1500px){
-        width:70vw;
-    }
-    @media(max-width:1300px){
-        width:60vw;
-    }
-    @media(max-width:980px){
-        width:40vw;
-    }
+  
 `
 
 export const Content = styled.section`
     display: flex;
     flex-wrap: wrap;
+    
 
     .book{
         width: 10vw;
         min-width: 200px;
-        padding: 1rem 3rem 2rem 0rem;
+        padding: 1rem;
         cursor: pointer;
         
         p{
@@ -46,14 +51,14 @@ export const Content = styled.section`
                 font-weight: 400;
             }
         }
-        @media(max-width:1300px){
+        @media(max-width:1440px){
             width: 8vw;
             min-width: 180px;
-            margin: 0 auto;
         }
 
         img{
             transition: transform .2s;
+            margin: 0 auto;
         }
 
         :hover{
@@ -61,6 +66,9 @@ export const Content = styled.section`
                 transform: scale(1.1);
             }
         }
+    }
+    @media(max-width:1150px){
+        justify-content: center;
     }
 
 `
@@ -71,9 +79,17 @@ export const ContainerHeader = styled.header`
     justify-content: flex-start; 
     padding: 1rem;
     padding-bottom: 0;
+    @media(max-width:1150px){
+        max-width: 100%;
+        justify-content: center;
+    }
 `
 
 export const ContentHeader = styled.div`
     max-width: 12.5rem;
+    @media(max-width:1024px){
+        width: 100%;
+        text-align: center;
+    }
 
 `
