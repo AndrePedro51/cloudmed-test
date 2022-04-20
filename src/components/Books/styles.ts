@@ -19,7 +19,18 @@ export const BooksStyle = styled.section`
                 text-align: center;
             }
         }
+
+        section{
+            justify-content: center;
+        }
+
+        header{
+            max-width: 100%;
+            justify-content: center;
+        }
     }
+
+    
     
 `
 export const Container = styled.main`
@@ -35,7 +46,6 @@ export const Container = styled.main`
 export const Content = styled.section`
     display: flex;
     flex-wrap: wrap;
-    
 
     .book{
         width: 10vw;
@@ -51,10 +61,7 @@ export const Content = styled.section`
                 font-weight: 400;
             }
         }
-        @media(max-width:1440px){
-            width: 8vw;
-            min-width: 180px;
-        }
+        
 
         img{
             transition: transform .2s;
@@ -67,9 +74,6 @@ export const Content = styled.section`
             }
         }
     }
-    @media(max-width:1150px){
-        justify-content: center;
-    }
 
 `
 
@@ -79,17 +83,10 @@ export const ContainerHeader = styled.header`
     justify-content: flex-start; 
     padding: 1rem;
     padding-bottom: 0;
-    @media(max-width:1150px){
-        max-width: 100%;
-        justify-content: center;
-    }
+    
 `
 
 export const ContentHeader = styled.div`
     max-width: 12.5rem;
-    @media(max-width:1024px){
-        width: 100%;
-        text-align: center;
-    }
 
 `

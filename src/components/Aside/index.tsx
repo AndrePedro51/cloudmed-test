@@ -8,10 +8,20 @@ import { SocialMedias } from "./SocialMedia";
 import { Stars } from "./Stars";
 import { Header } from "./Header";
 import { AuthorInf } from "./AuthorInf";
+import { useState } from "react";
+
 
 export function Aside(){
+    const [menuClass, setMenuClass] = useState('hideMenu')
+    function handleMenuClass(){
+        if (menuClass === 'hideMenu' || menuClass === ''){
+            setMenuClass('showMenu')
+        } else {
+            setMenuClass('hideMenu')
+        }
+    }
     return(
-        <Container>
+        <Container className={menuClass}>
             <Header />
             <Content>
                 <Stars />
@@ -20,6 +30,7 @@ export function Aside(){
                 <SocialMedias />
                 <button>MINHA LISTA</button>
             </Content>
+            <div className="toggle" onClick={handleMenuClass}> Inf. autor</div>
         </Container>
         
     )

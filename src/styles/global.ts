@@ -26,6 +26,18 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background-color: var(--white-100);
         -webkit-font-smothing: antialiased;
+        .hideMenu{
+            left: -301px;
+            @media(max-width:320px){
+                left: -280px;
+            }
+            @media(min-width:1151px){
+                left: 0px;
+            }
+        }
+        .showMenu{
+            left: 0px;
+        }
     }
 
     body, button, input, textarea{

@@ -8,10 +8,47 @@ export const Container = styled.aside`
     min-width: 300px;
     
     background: var(--black-700);
+    z-index: 100;
     @media(max-width:1150px){
-        z-index: 100;
-        left: -100%;
+        left: -301px;
     }
+    @media(max-width:320px){
+        min-width: 280px;
+    }
+
+    .toggle{
+        display: none;
+        position: absolute;
+        left: 272px;
+        top: 50px;
+        z-index: 10;
+
+        min-width: 100px;
+        padding: 0.8rem;
+
+        text-align: center;
+        color: var(--white-100);
+        cursor: pointer;
+
+        background: var(--black-700);
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+
+        transform: rotate(-90deg);
+        @media(max-width:1150px){
+            display: block;
+            left: 270px;
+        }
+        @media(max-width:720px){
+            left: 269px;
+        }
+        @media(max-width:320px){
+            left: 249px;
+        }
+    }
+
+    transition: all 0.2s;
+
+    
 `
 
 export const HeaderStyle = styled.header`
