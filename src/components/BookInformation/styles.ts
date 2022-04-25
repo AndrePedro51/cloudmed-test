@@ -4,27 +4,33 @@ export const BooksStyle = styled.section`
     display: block;
     margin: 0 0 0 auto;
     padding-right: 2.5rem;
-`
-export const Container = styled.main`
-    width: 78vw;
-    padding: 1rem;
-    
-    h1{
-        padding-bottom: 2rem;
-        font-size: 2rem;
+    @media(max-width:1750px){
+        main{
+            width:70vw;
+        }
     }
 
-    @media(max-width:1750px){
-        width:75vw;
+    @media(max-width:1150px){
+        padding-right: 0;
+        main{
+            width:100vw;
+        }
+
+        header{
+            max-width: 100%;
+            @media(max-width:1150px){
+                margin-left: 2.5rem;
+            }
+        }
     }
-    @media(max-width:1500px){
-        width:70vw;
-    }
-    @media(max-width:1300px){
-        width:60vw;
-    }
-    @media(max-width:980px){
-        width:40vw;
+`
+export const Container = styled.main`
+    width: 75vw;
+    padding: 1rem;
+    h1{
+        @media(max-width:1150px){
+            margin-left: 2.5rem;
+        }
     }
 `
 
@@ -54,6 +60,9 @@ export const Content = styled.section`
         h1{
             padding-top: 2rem;
             padding-bottom: 0;
+            @media(max-width:1150px){
+                margin-left: 0;
+            }
         }
         p{
             padding: 1rem 0;
@@ -73,6 +82,10 @@ export const ContainerHeader = styled.header`
 
     svg{
         cursor: pointer;
+        :hover{
+            transform: scale(1.1);
+        }
+        transition: all 0.2s;
     }
 `
 

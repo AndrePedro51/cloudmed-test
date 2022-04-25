@@ -54,8 +54,13 @@ export const Container = styled.aside`
 export const HeaderStyle = styled.header`
     width: 100%;
     height: 30vh;
-    background: url("images/gaiman.png") center;
     background-size: cover;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 `
 export const AuthorInfStyle = styled.div`
     p{
