@@ -1,5 +1,5 @@
 import { mdiTwitter, mdiFacebook, mdiInstagram, mdiYoutube, mdiPinterest} from '@mdi/js';
-import dribble from "../../assets/dribbble.png"
+import dribble from "../../img/dribbble.png"
 import Icon from '@mdi/react';
 import Image from "next/image";
 import { SocialMediaStyle } from './styles';

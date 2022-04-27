@@ -1,9 +1,9 @@
-import { Comp } from "../components/Comp";
+import { Index } from "../components/Comp";
 
 export default function Home() {
   return (
     <>
-      <Comp />
+      <Index />
     </>
   )
 }

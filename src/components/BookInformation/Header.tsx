@@ -1,6 +1,6 @@
 import { ContainerHeader, ContentHeader } from "./styles"
 import Image from 'next/image'
-import logo from '../../assets/logotipo.png'
+import logo from '../../img/logotipo.png'
 import { mdiArrowLeftCircle } from '@mdi/js';
 import Icon from "@mdi/react";
 import Link from "next/link";

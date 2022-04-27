@@ -2,7 +2,7 @@ import { Aside } from "../Aside";
 import { Books } from "../Books";
 import { CompStyle } from "./styles";
 
-export function Comp(){
+export function Index(){
     return(
         <CompStyle>
             <Aside /> 
