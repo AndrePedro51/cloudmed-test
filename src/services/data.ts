@@ -18,7 +18,9 @@ export const data = {
         books: [
             {
                 id: 1,
+                slug: "neve-vidro-macas",
                 title: "Neve, vidro e maçãs",
+                category: "Conto / Ficção",
                 year: 2019,
                 stars: 5,
                 rate: 4.8,
@@ -29,7 +31,9 @@ export const data = {
             },
             {
                 id: 2,
+                slug: "mitologia-nordica",
                 title: "Mitologia nórdica",
+                category: "Mito / Literatura fantástica",
                 year: 2017,
                 stars: 4,
                 rate: 4.1,
@@ -39,7 +43,9 @@ export const data = {
             },
             {
                 id: 3,
+                slug: "criaturas-estranhas",
                 title: "Criaturas estranhas",
+                category: "Literatura fantástica",
                 year: 2013,
                 stars: 4,
                 rate: 3.8,
@@ -49,7 +55,9 @@ export const data = {
             },
             {
                 id: 4,
+                slug: "fumaca-e-espelhos",
                 title: "Fumaça e espelhos",
+                category: "Conto / Ficção",
                 year: 1998,
                 stars: 4.5,
                 rate: 4.2,
@@ -59,7 +67,9 @@ export const data = {
             },
             {
                 id: 5,
+                slug: "sandaman-fim-dos-mundos",
                 title: "Sandman - Fim dos mundos",
+                category: "Terror / Literatura fantástica",
                 year: 1994,
                 stars: 5,
                 rate: 4.7,
@@ -69,7 +79,9 @@ export const data = {
             },
             {
                 id: 6,
+                slug: "lugar-nenhum",
                 title: "Lugar nenhum",
+                category: "Mito / Fantasia contemporênea",
                 year: 1996,
                 stars: 5,
                 rate: 4.7,
@@ -79,7 +91,9 @@ export const data = {
             },
             {
                 id: 7,
+                slug: "livro-do-cemiterio",
                 title: "Livro do cemitério",
+                category: "Terror / Literatura fantástica",
                 year: 2008,
                 stars: 5,
                 rate: 4.7,
@@ -89,7 +103,9 @@ export const data = {
             },
             {
                 id: 8,
+                slug: "sandman-versao-definitiva-vol-1",
                 title: "Sandman - Versão definitiva (Vol 1)",
+                category: "Terror / Literatura fantástica",
                 year: 2006,
                 stars: 5,
                 rate: 4.9,
@@ -99,7 +115,9 @@ export const data = {
             },
             {
                 id: 9,
+                slug: "coraline",
                 title: "Coraline",
+                category: "Terror / Ficção paranormal",
                 year: 2002,
                 stars: 5,
                 rate: 4.9,

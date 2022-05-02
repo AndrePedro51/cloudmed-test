@@ -1,7 +1,11 @@
 import { HeaderStyle } from "./styles";
 
-export function Header(){
-    const image = "/images/Fumaça e espelhos - 1999.png"
+interface HeaderProps{
+    bookCover: string;
+}
+
+export function Header({ bookCover }:HeaderProps){
+    const image = bookCover
     return(
         <HeaderStyle>
             <img src={image} alt="Fumaça e espelhos" />
