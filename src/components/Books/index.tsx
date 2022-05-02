@@ -3,7 +3,7 @@ import { Header } from "./Header"
 import { Book } from "./Book"
 import { Pagination } from "../Pagination"
 
-import {data} from "../../services/data"
+import { data } from "../../services/data"
 
 export function Books(){
     return (

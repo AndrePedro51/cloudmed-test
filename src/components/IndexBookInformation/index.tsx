@@ -24,7 +24,7 @@ export function IndexBookInformation({ asideBooksData }: IndexBookInformationPro
     )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({params}) => {
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     const { slug } = params
 
     const response = data.author.books.find(book => book.slug == slug)
