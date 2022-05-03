@@ -64,13 +64,14 @@ export const Content = styled.section`
         
 
         img{
+            width: 100%;
             transition: transform .2s;
             margin: 0 auto;
         }
 
         :hover{
             img{
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
         }
     }

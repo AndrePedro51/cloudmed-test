@@ -13,7 +13,7 @@ export function Books(){
                 <h1>TODAS AS OBRAS</h1>
                 <Content>
                     {data.author.books.map(book => (
-                        <Book key={book.id} slug={book.slug} src={book.bookCover} title={book.title} year={book.year}/>
+                        <Book key={book.id} slug={book.slug} bookCover={book.bookCover} title={book.title} year={book.year}/>
                     ))}
                 </Content>
                 <Pagination />
