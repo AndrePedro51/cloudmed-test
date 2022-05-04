@@ -10,7 +10,7 @@ interface HomeProps{
       bookCover:string, 
       title: string, 
       year: number, 
-      smallDescription: string, 
+      shortDescription: string, 
       category: string,
   }
 }
@@ -19,7 +19,7 @@ export default function Book({ asideBooksData }: HomeProps){
   return(
     <>
       <BookStyle>
-        <AsideBook bookCover={asideBooksData.bookCover} category={asideBooksData.category} smallDescription={asideBooksData.smallDescription} title={asideBooksData.title} year={asideBooksData.year}/> 
+        <AsideBook bookCover={asideBooksData.bookCover} category={asideBooksData.category} smallDescription={asideBooksData.shortDescription} title={asideBooksData.title} year={asideBooksData.year}/> 
         <BookInformation />
       </BookStyle>
     </>
@@ -38,7 +38,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
       bookCover: response.bookCover,
       title: response.title,
       year: response.year,
-      smallDescription: response.description,
+      shortDescription: response.shortDescription,
       category: response.category
 
   }

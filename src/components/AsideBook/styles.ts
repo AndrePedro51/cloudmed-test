@@ -50,7 +50,7 @@ export const Container = styled.aside`
 
 export const HeaderStyle = styled.header`
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
 
     img{
