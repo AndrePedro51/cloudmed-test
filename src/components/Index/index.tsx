@@ -1,12 +1,12 @@
 import { Aside } from "../Aside";
 import { Books } from "../Books";
-import { CompStyle } from "./styles";
+import { IndexStyle } from "./styles";
 
 export function Index(){
     return(
-        <CompStyle>
+        <IndexStyle>
             <Aside /> 
             <Books />
-        </CompStyle>
+        </IndexStyle>
     )
 }

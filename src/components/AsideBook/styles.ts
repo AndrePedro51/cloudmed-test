@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.aside`
-    display: block;
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    min-height: 100vh;
     width: 20vw;
     min-width: 300px;
     
@@ -50,8 +49,7 @@ export const Container = styled.aside`
 
 export const HeaderStyle = styled.header`
     width: 100%;
-    height: 60vh;
-    background-size: cover;
+    height: 61vh;
 
     img{
         width: 100%;
@@ -77,7 +75,6 @@ export const Content = styled.section`
     flex-direction: column;
     gap: 2rem;
     color: var(--white-100);
-
 
     button{
         padding: .8rem 2.5rem;

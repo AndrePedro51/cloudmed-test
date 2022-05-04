@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.aside`
-    display: block;
     position: fixed;
     height: 100%;
     width: 20vw;
