@@ -3,14 +3,20 @@ import { mdiStarHalfFull } from '@mdi/js';
 import Icon from "@mdi/react";
 import { StarsStyle } from "./styles";
 
-export function Stars(){
+interface starsProps {
+    starsNumber: number;
+}
+
+export function Stars({ starsNumber }: starsProps){
+    const stars = []
+    for(let i = 0; i < starsNumber; i++){
+        stars.push(i)
+    }
     return(
         <StarsStyle>
-            <Icon path={mdiStar} size={1}/>
-            <Icon path={mdiStar} size={1}/>
-            <Icon path={mdiStar} size={1}/>
-            <Icon path={mdiStar} size={1}/>
-            <Icon path={mdiStarHalfFull} size={1}/>
+            {stars.map(star => (
+                <Icon key={star} path={mdiStar} size={1}/>
+            ))}
         </StarsStyle>
     )
 }

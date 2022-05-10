@@ -5,21 +5,25 @@ import { CompStyle } from "./styles";
 import { data } from "../../services/data"
 
 interface IndexBookInformationProps{
-    asideBooksData: {
+    indexBooksData: {
         slug: string;
         bookCover:string, 
         title: string, 
         year: number, 
         smallDescription: string, 
+        description: string,
+        rate: string,
+        avaliations: number;
+        stars: number;
         category: string,
     }
 }
 
-export function IndexBookInformation({ asideBooksData }: IndexBookInformationProps){
+export function IndexBookInformation({ indexBooksData }: IndexBookInformationProps){
     return(
         <CompStyle>
-            <AsideBook bookCover={asideBooksData.bookCover} category={asideBooksData.category} smallDescription={asideBooksData.smallDescription} title={asideBooksData.title} year={asideBooksData.year}/> 
-            <BookInformation />
+            <AsideBook bookCover={indexBooksData.bookCover} category={indexBooksData.category} smallDescription={indexBooksData.smallDescription} title={indexBooksData.title} year={indexBooksData.year}/> 
+            <BookInformation title="asdf" rate={"4.5"} avaliations={"1245"} description="aaaaa" stars={indexBooksData.stars}/>
         </CompStyle>
     )
 }
@@ -29,19 +33,23 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
 
     const response = data.author.books.find(book => book.slug == slug)
 
-    const asideBooksData = {
+    const indexBooksData = {
         slug,
         bookCover: response.bookCover,
         title: response.title,
         year: response.year,
-        smallDescription: response.description,
-        category: response.category
+        smallDescription: response.shortDescription,
+        description: response.description,
+        rate: response.rate,
+        avaliations: response.avaliations,
+        stars: response.stars,
+        category: response.category,
 
     }
 
     return {
         props:{
-            asideBooksData,
+            indexBooksData,
         }
     }
 }
