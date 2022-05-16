@@ -27,7 +27,9 @@ export const BooksStyle = styled.section`
 export const Container = styled.main`
     width: 75vw;
     padding: 1rem;
-    h1{
+    >h1{
+        margin-bottom: 2rem;
+        font-size: 2rem;
         @media(max-width:1150px){
             margin-left: 2.5rem;
         }
@@ -60,6 +62,7 @@ export const Content = styled.section`
         h1{
             padding-top: 2rem;
             padding-bottom: 0;
+            font-size: 1.2rem;
             @media(max-width:1150px){
                 margin-left: 0;
             }

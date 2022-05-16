@@ -4,21 +4,22 @@ import { Stars } from "./Stars"
 
 interface bookInformationProps {
     title: string;
-    rate: string;
-    avaliations: string;
-    description: string;
+    rate: number;
+    avaliations: number;
+    description: [];
     stars: number;
+    year:number;
 }
 
-export function BookInformation({ title, rate, avaliations, description, stars }:bookInformationProps){
+export function BookInformation({ title, rate, avaliations, description, stars, year }:bookInformationProps){
     return (
         <BooksStyle>
             <Header />
             <Container>
-                <h1>{title}</h1>
+                <h1>{title} - {year}</h1>
                 <Content>
                     <section className="avaliation">
-                        <h1>{2.5}</h1>
+                        <h1>{rate}</h1>
                         <div>
                             <Stars starsNumber={stars}/>
                             <p>
@@ -28,7 +29,9 @@ export function BookInformation({ title, rate, avaliations, description, stars }
                     </section>
                     <section className="resenha">
                         <h1>Resenha</h1>
-                        <p>{description}</p>
+                        {description.map(desc => (
+                            <p key={desc}>{desc}</p>
+                        ))}
                     </section>
                 </Content>
                 
